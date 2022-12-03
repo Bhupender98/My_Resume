@@ -308,12 +308,14 @@
         </h1>
         <div id="contact-container">
           <div id="contact-form-container">
-            <form id="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/xkneldka"
+            method="POST">
               <input
                 id="input-name"
                 name="name"
                 type="text"
                 placeholder="Your Name"
+                autocomplete="off"
               />
               <input
                 id="input-email"
@@ -321,6 +323,7 @@
                 type="text"
                 required
                 placeholder="Your Email"
+                autocomplete="off"
               />
               <textarea
                 id="input-message"
@@ -328,6 +331,9 @@
                 rows="2"
                 cols="40"
                 placeholder="Message"
+                autocomplete="off"
+                minlength="10"
+                required
               ></textarea>
               <button class="sub-btn" type="submit">SEND MESSAGE</button>
             </form>
