@@ -43,6 +43,8 @@ body {
 .horizontal-list li a {
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
+  margin-right: 2.5rem;
 }
 
 .nav-menu li a {
@@ -546,9 +548,54 @@ button:focus {
     height: inherit;
     width: 50%;
 }
+
+/* toggle btn handlers */
+.dropdown-menu {
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* dropdown list  */
+.dropdown-list {
+  border: 1px solid lightgray;
+  width: 200px;
+  text-align: center;
+}
+
+/* list  */
+.dropdown-list .no-list-style li {
+  border-bottom: 2px solid white;
+  /* padding: 5px; */
+  color: #ffff;
+  list-style: none;
+}
+.dropdown-list .no-list-style li a {
+  color: #ffff;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+/* toggle bars  */
+.dropdown-menu {
+  display: none;
+}
+.bars{
+    color: white;
+}
 /* responsiveness for mobile views  */
 
 @media only screen and (max-width: 572px) {
+     .dropdown-menu {
+    display: block;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .dropdown-menu:hover .dropdown-list {
+    display: block;
+  }
     
     .timeline-box {
         width: 100%;
